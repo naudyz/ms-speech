@@ -104,7 +104,7 @@ int main(int argc, char* argv[])
 		goto exe_failed;
 	}
 
-	if (libcurl_post(pcm_url.c_str(), pcm_header, NULL, 0, pcm_response))
+	if (libcurl_post(pcm_url.c_str(), pcm_header, postcontent, filesize, pcm_response))
 	{
 		printf("result:%s\n", pcm_response.c_str());
 	}
